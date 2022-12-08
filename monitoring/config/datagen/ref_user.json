@@ -1,0 +1,29 @@
+{
+  "namespace": "fr.sample.model",
+  "name": "RefUser",
+  "type": "record",
+  "fields": [
+    {
+      "name": "userid",
+      "type": {
+        "type": "string",
+        "arg.properties": {
+          "regex": "User_[1-9]{0,1}"
+        }
+      }
+    },
+    {
+      "name": "firstname",
+      "type": {
+        "type": "string",
+        "arg.properties": {
+          "options": [
+            "JOHN",
+            "MARC",
+            "JAMES"
+          ]
+        }
+      }
+    }
+  ]
+}
